@@ -3,12 +3,11 @@ import cv2
 img = cv2.imread("resources/example.jpg")
 
 """
-This function takes 2 parameters the first one is the image
-you want to blur the second one is the amount of blur you 
-want to apply to the image.
+This function takes 3 parameters the first one is the image
+you want to apply canny on the second one is the threshold1
+and the third one is threshold2
 
-Kernal Size = Blur Amount
-(Ignore the last parameter it is not that important)
+
 """    
 imgCanny = cv2.Canny(img, 150, 200)
 
