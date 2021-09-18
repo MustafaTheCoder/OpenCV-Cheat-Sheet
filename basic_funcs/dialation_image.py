@@ -2,18 +2,16 @@ import cv2
 import numpy as np
 
 img = cv2.imread("resources/example.jpg")
-kernal = np.ones((5, 5), np.uint8)
+kernal = np.ones((2, 2), np.uint8)
 
 """
-What this function does it like sketches the whoel picture
-and returns it
-
-This function takes 3 parameters the first one is the image
-you want to apply canny on the second one is the threshold1
-and the third one is threshold2
+What this function does it makes the edges of the functions thick 
+so that the canny function can process them in a better way.
 """    
-imgDialation = cv2.dilate(img, kernel)
+imgCanny = cv2.Canny(img, 150, 200)
+imgDialation = cv2.dilate(imgCanny, kernal)
+
 # Displaying the output
-cv2.imshow("Output", imgCanny)
+cv2.imshow("Output", imgDialation)
 # Adding delay to the image
 cv2.waitKey(0)
