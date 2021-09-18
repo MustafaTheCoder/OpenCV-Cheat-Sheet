@@ -5,7 +5,7 @@ img = cv2.imread("resources/example.jpg")
 kernal = np.ones((2, 2), np.uint8)
 
 """
-What this function does it makes the edges of the functions thick 
+What this function does it makes the edges of the picture thick 
 so that the canny function can process them in a better way, and also
 numpy is used here in the kernal variable to do that main part which is 
 deciding the amount of thinkness needed for canny to process the lines of 
