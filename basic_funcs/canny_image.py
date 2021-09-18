@@ -13,6 +13,6 @@ and the third one is threshold2
 imgCanny = cv2.Canny(img, 150, 200)
 
 # Displaying the output
-cv2.imshow("Output", imgBlur)
+cv2.imshow("Output", imgCanny)
 # Adding delay to the image
 cv2.waitKey(0)
