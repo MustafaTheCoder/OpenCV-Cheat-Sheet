@@ -9,6 +9,9 @@ print(img.shape) # to check the measurements of the image
 """
 The part below shown is done because it defines the area that you want to be colored and the
 color it self.
+
+To make the whole window colored we can just write
+img[:] = 255, 0, 0 
 """
 img[0:200, 300:400] = 255, 0, 0 
 
